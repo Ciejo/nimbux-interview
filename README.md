@@ -14,7 +14,7 @@ A Terraform configuration to launch an Application Load Balancer with two EC2 in
     terraform.tfvars - Set the different values of the variables being used.
     user_data.sh - Script that will install docker and the nginx image.
     user_data2.sh - Script that installs apache.
-    nimbux-exercise.drawio.html - Diagram of the exercise
+    nimbux-diagram.pdf - Diagram of the exercise
 
 # Access credentials
 
