@@ -38,3 +38,6 @@ variable "instance_type" {
     description = "Instance type"
 }
 
+variable "alb_port" {
+  description = "ALB port"
+}

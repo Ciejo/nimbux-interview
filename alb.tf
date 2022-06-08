@@ -1,7 +1,7 @@
 resource "aws_alb" "alb" {
   name                      = "alb"
   security_groups           = ["${aws_security_group.alb-sg.id}"]
-  subnets                   = aws_subnet.public.*.id
+  subnets                   = aws_subnet.public.1.id
   tags = {
     Name = "ALB"
   }
@@ -10,7 +10,7 @@ resource "aws_alb" "alb" {
 # ALB target group
 resource "aws_alb_target_group" "alb-tg" {
   name     = "Target-group"
-  port     = 80
+  port     = var.alb_port
   protocol = "HTTP"
   vpc_id   = "${aws_vpc.vpc.id}"
   

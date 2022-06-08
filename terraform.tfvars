@@ -8,3 +8,4 @@ azs = ["sa-east-1a", "sa-east-1c"]
 ami_nginx = "ami-0800f9916b7655289"
 ami_apache= "ami-0deebba34ef22f5a9"
 instance_type = "t2.micro"
+alb_port = "80"
